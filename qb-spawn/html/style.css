@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700&display=swap');
+
+.container {
+  font-family: 'Poppins', sans-serif;
+}
+
+.spawn-locations {
+  text-transform: uppercase;
+  position: absolute;
+  top: 10vh;
+  left: 10vh;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+  padding: 30px;
+  cursor: default;
+}
+
+.location {
+  width: 28vh;
+  height: 4.5vh;
+  margin-bottom: 2vh;
+  transition: 0.2s;
+  transition: .1s linear;
+  border-radius: 25px;
+  cursor: pointer;
+  background: #c7c7c7;
+}
+
+.location>p {
+  position: relative;
+  color: #ededed;
+  text-align: center;
+  line-height: 4.5vh;
+  font-size: 1.8vh;
+}
+
+.location:hover {
+  background: linear-gradient(to right, #FFD200, #F7971E);
+  transition: 0.2s;
+}
+
+/* .location:not(:nth-child(2)) {
+  display: none;
+} */
+
+.selected {
+  background: linear-gradient(to right, #FFD200, #F7971E);
+}
+
+.submit-spawn {
+  background-color: #11998e;
+  background: linear-gradient(to right, #38ef7d, #11998e);
+  width: 28vh;
+  height: 4.5vh;
+  margin-bottom: .75vh;
+  transition: 0.2s;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.submit-spawn>p {
+  position: relative;
+  color: white;
+  text-align: center;
+  line-height: 4.5vh;
+  font-size: 1.6vh;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.submit-spawn:hover {
+  transition: 0.2s;
+}
+
+#spawn-label {
+  color: #ededed;
+  font-weight: 500;
+}
+
+.loclabel {
+  width: 28vh;
+  height: 4vh;
+  transition: 0.2s;
+}
+
+.loclabel>p {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 500;
+  position: relative;
+  color: #ededed;
+  text-align: center;
+  font-size: 1.5vh;
+}
+
+#current-location {
+  font-size: 1.5vh;
+  line-height: 50px;
+  color: #111;
+}
